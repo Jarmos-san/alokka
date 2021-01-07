@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Community Support
+    url: https://github.com/Jarmos-san/Alokka/discussions
+    about: Please ask and answer questions here.
+  - name: GitHub Security Policy
+    url: https://github.com/Jarmos-san/Alokka/security/policy
+    about: Check how to report security vulnerabilities here.
