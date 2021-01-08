@@ -1,0 +1,23 @@
+version: 2
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      time: "9:00"
+      timezone: "Asia/Kolkata"
+    target-Branch: "dev"
+    reviewers:
+      - "Jarmos-san"
+
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      time: "9:00"
+      timezone: "Asia/Kolkata"
+    target-Branch: "dev"
+    reviewers:
+      - "Jarmos-san"
