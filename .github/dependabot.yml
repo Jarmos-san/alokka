@@ -5,7 +5,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      time: "9:00"
+      time: "09:00"
       timezone: "Asia/Kolkata"
     target-Branch: "dev"
     reviewers:
@@ -16,7 +16,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      time: "9:00"
+      time: "09:00"
       timezone: "Asia/Kolkata"
     target-Branch: "dev"
     reviewers:
