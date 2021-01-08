@@ -41,7 +41,7 @@ This project and everyone participating in it is governed by the T&Cs mentioned 
 
 ### Alokka
 
-<!-- TODO: Write a brief description of what Alokka is -->
+Alokka is a super-fast asynchronous Python library for the Twitter API v2. It wraps around the endpoints provided by Twitter to access their API for easier access & data manipulation. With Alokka you no longer have to worry about making HTTP requests or parsing through tough-to-read JSON responses.
 
 ## How Can I Contribute
 
@@ -55,7 +55,7 @@ Before creating bug reports, please check [this list](#before-submitting-a-bug-r
 
 #### Before Submitting A Bug Report
 
-<!-- TODO: List potential bugs users might face -->
+As it is right now, the project is developing at a rapid pace & no feature is set in stone. With the core idea of Alokka settled, there might be some unintended behaviour with it. If you do come across any such behaviour, cross-reference it with the [official Twitter API](https://developer.twitter.com/en/docs/twitter-api) first, then create a [Bug Report](ISSUE_TEMPLATE/bug-report.md). Additionally, if you're not sure if it's an actual bug, [discuss about with the community](https://github.com/Jarmos-san/Alokka/discussions) first.
 
 #### How Do I Submit A (Good) Bug Report
 
@@ -107,13 +107,20 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/Jarmos
 Unsure where to begin contributing to Alokka? You can start by looking through these [list of labels](https://github.com/Jarmos-san/Alokka/labels). Keep an eye out for the `good first issue` and `help wanted` labels:
 
 - [good first issues](https://github.com/Jarmos-san/Alokka/labels/good%20first%20issue) - issues which should only require a few lines of code, & a test or two.
-- [help wanted issues](https://github.com/Jarmos-san/Alokka/labels/help%20wanted) - issues which should be a bit more involved than issues labeled `good first issue`.
+- [help wanted issues](https://github.com/Jarmos-san/Alokka/labels/help%20wanted) - issues which should be a bit more involved than issues labelled `good first issue`.
 
 Both issue lists are sorted by the total number of comments. While not perfect, the number of comments is a reasonable proxy for an impact a given change will have.
 
 #### Local development
 
-<!-- TODO: Include steps to recreate the website locally. -->
+If you would like to contribute to Alokka, ensure you've a [forked copy](https://guides.github.com/activities/forking/) of the source code first. You'll be pushing your contributions to it & then make a PR to the [original repository](https://github.com/Jarmos-san/Alokka). That said, these are the steps you should follow before you start contributing to the project:
+
+- Install [Poetry](https://python-poetry.org/) first. You can find the installation instructions [here](https://python-poetry.org/docs/#installation). Alternatively, you can install it on Unix environments using a script provided by the author himself. To use the script execute this command `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python`.
+- Clone your forked copy of the source code using the `git clone git@github.com:<YOUR-USERNAME>/Alokka.git` command.
+- Change directory into the project folder with `cd Alokka`.
+- Create a virtual environment with the `poetry shell` command.
+- Install the dependencies with the `poetry install`.
+- The start hacking away with your favourite code editor.
 
 ### Pull Requests
 
@@ -172,6 +179,29 @@ The labels are loosely grouped by their purpose, but it's not required that ever
 Please open an [issue](https://github.com/Jarmos-san/pelican-blog/issues/new/choose), if you have suggestions for new labels, and if you notice some labels are missing, then please open an issue for that as well.
 
 #### Type of Issue and Issue State
-<!-- TODO Create a table of Issue labels here -->
+
+You can find the following labels for every [issue thread](https://github.com/Jarmos-san/Alokka/issues) created. Feel free to click on any of them & see if there's something you resolve. If you know of a possible solution, don't hesitate to contribute.
+
+- [bug](https://github.com/Jarmos-san/Alokka/labels/bug) - Issue threads with reports of unintended behaviour.
+- [documentation](https://github.com/Jarmos-san/Alokka/labels/documentation) - Issue threads for improvements, fixing typos, etc to the documentations.
+- [duplicate](https://github.com/Jarmos-san/Alokka/labels/duplicate) - Duplicate issue threads which will be closed immediately.
+- [enhancement](https://github.com/Jarmos-san/Alokka/labels/enhancements) - Feature requests or enhancements to how Alokka functions.
+- [good first issue](https://github.com/Jarmos-san/Alokka/labels/good%20first%20issue) - Issues perfect for first-time contributors or beginners to handle.
+- [help wanted](https://github.com/Jarmos-san/Alokka/labels/help%20wanted) - Issue threads where the maintainers of the project needs the community's help & contributions.
+- [invalid](https://github.com/Jarmos-san/Alokka/labels/invalid) - Issue threads that are "invalid" for some reason or the other.
+- [question](https://github.com/Jarmos-san/Alokka/labels/question) - Issue threads created as questions. They maybe moved to GitHub's Discussion feature without notice.
+- [wontfix](https://github.com/Jarmos-san/Alokka/labels/wontfix) - Issues that won't be fixed for the foreseeable future.
+
 #### Pull Request Labels
-<!-- TODO Create a table of PR tables here -->
+
+The PR labels mirror those of the Issue labels. hence they're all the same. Besides, **labelling the issues it's important to link an appropriate issue thread to the PR for reference**. That said, following are the labels for PRs.
+
+- [bug](https://github.com/Jarmos-san/Alokka/labels/bug) - Issue threads with reports of unintended behaviour.
+- [documentation](https://github.com/Jarmos-san/Alokka/labels/documentation) - Issue threads for improvements, fixing typos, etc to the documentations.
+- [duplicate](https://github.com/Jarmos-san/Alokka/labels/duplicate) - Duplicate issue threads which will be closed immediately.
+- [enhancement](https://github.com/Jarmos-san/Alokka/labels/enhancements) - Feature requests or enhancements to how Alokka functions.
+- [good first issue](https://github.com/Jarmos-san/Alokka/labels/good%20first%20issue) - Issues perfect for first-time contributors or beginners to handle.
+- [help wanted](https://github.com/Jarmos-san/Alokka/labels/help%20wanted) - Issue threads where the maintainers of the project needs the community's help & contributions.
+- [invalid](https://github.com/Jarmos-san/Alokka/labels/invalid) - Issue threads that are "invalid" for some reason or the other.
+- [question](https://github.com/Jarmos-san/Alokka/labels/question) - Issue threads created as questions. They maybe moved to GitHub's Discussion feature without notice.
+- [wontfix](https://github.com/Jarmos-san/Alokka/labels/wontfix) - Issues that won't be fixed for the foreseeable future.
