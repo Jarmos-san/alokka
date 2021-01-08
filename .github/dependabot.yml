@@ -7,7 +7,7 @@ updates:
       interval: "weekly"
       time: "09:00"
       timezone: "Asia/Kolkata"
-    target-Branch: "dev"
+    target-branch: "dev"
     reviewers:
       - "Jarmos-san"
 
@@ -17,6 +17,6 @@ updates:
       interval: "weekly"
       time: "09:00"
       timezone: "Asia/Kolkata"
-    target-Branch: "dev"
+    target-branch: "dev"
     reviewers:
       - "Jarmos-san"
