@@ -11,7 +11,6 @@ updates:
     reviewers:
       - "Jarmos-san"
 
-updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
