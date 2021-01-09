@@ -28,6 +28,9 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "dependencies"
+          MERGE_METHOD: "rebase"
+          MERGE_COMMIT_MESSAGE: Auto Merge {pullRequest.number}
+          MERGE_FILTER_AUTHOR: "dependabot[bot]"
           UPDATE_LABELS: "dependencies"
           UPDATE_METHOD: "rebase"
           UPDATE_RETRIES: "6"
