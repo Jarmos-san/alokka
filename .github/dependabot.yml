@@ -10,6 +10,8 @@ updates:
     target-branch: "dev"
     reviewers:
       - "Jarmos-san"
+    labels:
+      - "automerge"
 
   - package-ecosystem: "pip"
     directory: "/"
@@ -20,3 +22,5 @@ updates:
     target-branch: "dev"
     reviewers:
       - "Jarmos-san"
+    labels:
+      - "automerge"
