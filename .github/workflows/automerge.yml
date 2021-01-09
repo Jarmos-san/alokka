@@ -20,7 +20,7 @@ on:
       - completed
 
 jobs:
-  automerge:
+  AutoMerge:
     runs-on: ubuntu-latest
     steps:
       - name: automerge
