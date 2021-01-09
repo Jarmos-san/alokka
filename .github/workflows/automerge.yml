@@ -1,6 +1,4 @@
-# ! More information about this Action is available at: https://github.com/pascalgn/automerge-action
-name: Auto Merge    # This Action automatically merges PRs opened specifically by Dependabot (for now).
-
+name: Auto PR Merge
 on:
   pull_request:
     types:
@@ -12,26 +10,19 @@ on:
       - ready_for_review
       - reopened
       - unlocked
-  pull_request_review:
-    types:
-      - submitted
   check_suite:
     types:
       - completed
-
 jobs:
   AutoMerge:
     runs-on: ubuntu-latest
     steps:
-      - name: automerge
+      - name: Auto Merge
         uses: "pascalgn/automerge-action@v0.13.0"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: "dependencies"
-          MERGE_METHOD: "rebase"
-          MERGE_COMMIT_MESSAGE: Auto Merge {pullRequest.number}
-          MERGE_FILTER_AUTHOR: "dependabot[bot]"
           UPDATE_LABELS: "dependencies"
           UPDATE_METHOD: "rebase"
-          UPDATE_RETRIES: "6"
-          UPDATE_RETRY_SLEEP: "10000"
+          MERGE_METHOD: "rebase"
+          MERGE_COMMIT_MESSAGE: "Auto merge {pullRequest.number}"
+          MERGE_FILTER_AUTHOR: "dependabot[bot]"
