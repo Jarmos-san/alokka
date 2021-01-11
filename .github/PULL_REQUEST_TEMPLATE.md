@@ -21,17 +21,18 @@ Please delete options that are not relevant.
 
 Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Also, list any relevant details for your test configuration.
 
-- [ ] {_Placeholders_}
-- [ ] {_Placeholders_}
+**Note**: If you're fixing an issue ensure the existing tests passes. If you're adding a new feature, write tests for those features & ensure all the test pass including the existing ones.
 
 **Test Configuration(s)**:
 
-{_Placeholders_}
+**Note**: `pytest` has very sensible default configurations setup out-of-the-box. But in case, you've configured your session of `pytest` to run differently, do list those configurations below. You can find documentations of the configurations [here](https://docs.pytest.org/en/stable/reference.html#configuration-options).
 
-- Firmware version:
-- Hardware:
-- Toolchain:
-- SDK:
+Here's an example configuration (_replace them with yours_):
+
+- `addopts = --maxfail=2 -rf`
+- `cache_dir = path/to/the/cache/directory`
+
+Replace the example section with your configurations. Before that, ensure your configurations plays well with Black & the `pytest`'s `pyproject.toml` [specification](https://docs.pytest.org/en/stable/customize.html#pyproject-toml).
 
 ## Checklist
 
