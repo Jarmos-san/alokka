@@ -1,23 +1,26 @@
+# Alokka
+
 <h1 align="center">
   <img src="assets/Alokka.png" alt="Alokka Logo" width="450" />
 </h1>
 
 <p align="center">A faster way to access, manage & use Twitter. Built with <a href="https://docs.aiohttp.org/en/stable/">aiohttp</a>.</p>
 
----
+</br>
 
-[![CodeQL](https://github.com/Jarmos-san/Alokka/workflows/CodeQL/badge.svg)](https://github.com/Jarmos-san/Alokka/actions?query=workflow%3ACodeQL) [![codecov](https://codecov.io/gh/Jarmos-san/Alokka/branch/dev/graph/badge.svg)](https://codecov.io/gh/Jarmos-san/Alokka) [![GitHub](https://img.shields.io/github/license/Jarmos-san/Alokka?color=181717&label=License&logo=GitHub)](https://github.com/Jarmos-san/Alokka/blob/dev/LICENSE) [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/Jarmos-san/Alokka?include_prereleases&sort=semver&color=181717&logo=GitHub&label=Releases)](https://github.com/Jarmos-san/Alokka/releases) [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Jarmos-san/Alokka?color=181717&label=Commit%20Frequency&logo=GitHub)](https://github.com/Jarmos-san/Alokka/graphs/commit-activity)
+[![Test Suite](https://github.com/Jarmos-san/Alokka/workflows/Test%20Suite/badge.svg)](https://github.com/Jarmos-san/Aurochs/actions?query=workflow%3A%22Test+Suite%22) [![codecov](https://codecov.io/gh/Jarmos-san/Alokka/branch/dev/graph/badge.svg)](https://codecov.io/gh/Jarmos-san/Alokka) [![GitHub](https://img.shields.io/github/license/Jarmos-san/Alokka?color=181717&label=License&logo=GitHub)](https://github.com/Jarmos-san/Alokka/blob/dev/LICENSE) [![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/Jarmos-san/Alokka?include_prereleases&sort=semver&color=181717&logo=GitHub&label=Releases)](https://github.com/Jarmos-san/Alokka/releases) [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Jarmos-san/Alokka?color=181717&label=Commit%20Frequency&logo=GitHub)](https://github.com/Jarmos-san/Alokka/graphs/commit-activity)
 
-- [About the Project](#about-the-project)
-  - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [Licensing](#licensing)
-- [Contact](#contact)
+- [Alokka](#alokka)
+  - [About the Project](#about-the-project)
+    - [Built With](#built-with)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Usage](#usage)
+  - [Roadmap](#roadmap)
+  - [Contributing](#contributing)
+  - [Licensing](#licensing)
+  - [Contact](#contact)
 
 ## About the Project
 
