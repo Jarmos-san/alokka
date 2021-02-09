@@ -12,6 +12,8 @@ updates:
       - "Jarmos-san"
     labels:
       - "automerge"
+    commit-message:
+      prefix: "⬆️"
 
   - package-ecosystem: "pip"
     directory: "/"
@@ -24,3 +26,5 @@ updates:
       - "Jarmos-san"
     labels:
       - "automerge"
+    commit-message:
+      prefix: "⬆️"
