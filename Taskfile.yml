@@ -47,6 +47,7 @@ tasks:
     run: once
     cmds:
       - poetry install
+      - poetry export --dev --output requirements.txt
 
   lint:
     desc: Run a bunch of linters & formatter to maintain code cleanliness.
