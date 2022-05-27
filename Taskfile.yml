@@ -1,0 +1,84 @@
+version: "3"
+
+tasks:
+  default:
+    desc: A bunch of default task to run when the state of the development is satisfactory.
+    summary: |
+      A bunch of default tasks to run when the state of the development is satisfactory.
+    cmds:
+      - task: lint
+      - task: test
+
+  cleanup:
+    desc: Perform some default cleanup tasks.
+    summary: |
+      Perform some cleaning up tasks after the development like deactivating virtual environments & what not.
+    cmds:
+      - task: venv:deactivate
+
+  venv:activate:
+    desc: Activate the virtual environment for development.
+    summary: |
+      Activate the virtual environment for further development.
+    cmds:
+      - poetry shell
+
+  venv:deactivate:
+    desc: Deactivate & exit the virtual environment's shell.
+    summary: |
+      Deactivate the virtual environment & it's shell (if it exists).
+    cmds:
+      - exit
+    status:
+      - test -d .venv
+
+  docs:build:
+    desc: Build the Sphinx documentations.
+    summary: |
+      Build the documentations using Sphinx.
+    dir: docs
+    sources:
+      - docs/**/*.rst
+    generates:
+      - docs/build/*
+    cmds:
+      - sphinx-build -b html source build
+
+  docs:preview:
+    desc: Preview the documentations in the browser.
+    summary: |
+      Preview the documentations in a local session of the browser.
+
+      P.S. Don't forget to use the "--watch" flag to watch for updates in the documentation sources.
+    deps:
+      - docs:build
+    dir: docs
+    cmds:
+      - xdg-open build/index.html
+
+  deps:install:
+    desc: Install the development dependencies for the project.
+    summary: |
+      Install the development dependencies for the project.
+    cmds:
+      - poetry install
+    deps:
+      - venv:activate
+
+  lint:
+    desc: Run a bunch of linters & formatter to maintain code cleanliness.
+    summary: |
+      Run a bunch of linters & formatters to maintain code cleanliness & standards.
+    cmds:
+      - pylint .
+      - black .
+      - isort .
+
+  test:
+    desc: Run the test suite.
+    summary: |
+      Run the test suite.
+    deps:
+      - lint
+    cmds:
+      - pytest .
