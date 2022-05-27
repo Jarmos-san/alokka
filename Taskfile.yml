@@ -14,23 +14,7 @@ tasks:
     summary: |
       Perform some cleaning up tasks after the development like deactivating virtual environments & what not.
     cmds:
-      - task: venv:deactivate
-
-  venv:activate:
-    desc: Activate the virtual environment for development.
-    summary: |
-      Activate the virtual environment for further development.
-    cmds:
-      - poetry shell
-
-  venv:deactivate:
-    desc: Deactivate & exit the virtual environment's shell.
-    summary: |
-      Deactivate the virtual environment & it's shell (if it exists).
-    cmds:
       - exit
-    status:
-      - test -d .venv
 
   docs:build:
     desc: Build the Sphinx documentations.
@@ -60,10 +44,9 @@ tasks:
     desc: Install the development dependencies for the project.
     summary: |
       Install the development dependencies for the project.
+    run: once
     cmds:
       - poetry install
-    deps:
-      - venv:activate
 
   lint:
     desc: Run a bunch of linters & formatter to maintain code cleanliness.
