@@ -15,7 +15,7 @@ pydantic = "^1.9.1"
 [tool.poetry.dev-dependencies]
 pytest = "^7.1"
 flake8 = "^4.0.1"
-black = "^22.3"
+black = "^22.8"
 pytest-cov = "^3.0.0"
 Sphinx = "^4.5.0"
 furo = "^2022.4.7"
